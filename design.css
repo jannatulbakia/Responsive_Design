@@ -1,0 +1,195 @@
+body{
+    background-color:#F5F8FF;
+    
+}
+
+.noto{
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+.inter{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+/* main global ends*/
+
+/*navbar starts*/
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px;
+}
+.navbar-main-div{
+    display: flex;
+    gap: 30px;
+    
+}
+.navbar-main-div p{
+    padding-top: 5px;
+}
+.navbar-main-section img{
+    height: 20px;
+    width: 20px;
+    padding-top: 15px;
+}
+.cart{
+    display: flex;
+    gap: 10px;
+}
+/*navbar ends*/
+
+/*fresh*/
+.fresh-section{
+    display: flex;
+    margin: 40px;
+    gap: 230px;
+}
+.fresh-text-section h1{
+    margin-bottom: 0;
+    font-size: 65px;
+}
+.fresh-text-section p{
+    margin-top: 0;
+    font-size: 22px;
+    color: grey;
+}
+
+/*fresh ends*/
+
+/*our plant start*/
+.our-plant-text-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.our-plant-text-section h1{
+    font-size: 50px;
+    margin-bottom: 0;
+}
+.our-plant-text-section p{
+    font-size: 22px;
+    align-items: center;
+    text-align: center;
+    color: grey;
+}
+.signle-card{
+    align-items: center;
+    text-align: center;
+}
+.signle-card button{
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+    background-color: #E95A08;
+    color: #F5F8FF;
+    border: none;
+    width: 270px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+.flower-card-section{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+/*our plant ends*/
+
+/*flower plant lover start*/
+
+.flower-lover-section{
+    margin: 40px;
+    display: flex;
+    align-items: flex-start;
+    gap: 100px;
+    position: relative;
+}
+.flower-lover-section h1{
+    font-size: 50px;
+}
+.flower-lover-section ul{
+    font-size: 22px;
+}
+.flower-lover-section li{
+    margin-top: 10px;
+    color: gray;
+    text-align: justify;
+}
+.badge{
+    position: absolute;
+    padding-right: 300px;
+    right: 500px;
+}
+.badge img{
+    height: 300px;
+    width: 300px;
+ 
+}
+/*flower plant lover ends*/
+
+/*join colorful bunch*/
+.join-us{
+    background: url(./assets/news-letter-bg.png);
+    height: 533px;
+    
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.join-us-text h1{
+    padding-top: 200px;
+    font-size: 50px;
+    color: white;
+}
+.subscribe input{
+    height: 50px;
+    width: 644px;
+    font-size: 16px;
+}
+.subscribe button{
+    font-size: 16px;
+    background-color: #E95A08;
+    border: none;
+    height: 55px;
+    width: 160px;
+    color: white;
+}
+
+/*join colorful bunch ends*/
+
+/*footer starts*/
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px;
+    gap: 20px;
+    color:gray;
+}
+.footer-details{
+    font-size: 22px;
+}
+.footer-links{
+    display: grid;
+    grid-template-columns: repeat(2,5fr);
+    gap: 50px;  
+}
+.footer-links a{
+    text-decoration: none;
+    color: gray;
+}
+.icon-class img{
+    padding-right: 20px;
+}
+/*footer ends*/
+/* responsive*/
+
+@media only screen and (max-width: 390px){
+    body{
+         background-color:#F5F8FF;
+    }
+
+}
