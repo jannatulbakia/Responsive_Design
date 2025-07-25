@@ -7,8 +7,6 @@ body{
   font-family: "Noto Serif", serif;
   font-optical-sizing: auto;
   font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
 }
 .inter{
   font-family: "Inter", sans-serif;
@@ -21,7 +19,7 @@ body{
 .navbar{
     display: flex;
     justify-content: space-between;
-    margin: 40px;
+    margin: 60px;
 }
 .navbar-main-div{
     display: flex;
@@ -30,6 +28,9 @@ body{
 }
 .navbar-main-div p{
     padding-top: 5px;
+}
+.cart h4{
+    font-weight:400;
 }
 .navbar-main-section img{
     height: 20px;
@@ -45,7 +46,7 @@ body{
 /*fresh*/
 .fresh-section{
     display: flex;
-    margin: 40px;
+    margin: 60px;
     gap: 230px;
 }
 .fresh-text-section h1{
@@ -61,6 +62,9 @@ body{
 /*fresh ends*/
 
 /*our plant start*/
+.Our-plant-section{
+    margin: 10px;
+}
 .our-plant-text-section{
     display: flex;
     flex-direction: column;
@@ -102,10 +106,10 @@ body{
 /*flower plant lover start*/
 
 .flower-lover-section{
-    margin: 40px;
+    margin: 60px;
     display: flex;
     align-items: flex-start;
-    gap: 100px;
+    gap: 120px;
     position: relative;
 }
 .flower-lover-section h1{
@@ -119,10 +123,13 @@ body{
     color: gray;
     text-align: justify;
 }
-.badge{
+.badge {
     position: absolute;
-    padding-right: 300px;
-    right: 500px;
+    top: -90px;
+    left: 400px;
+    width: 220px;
+    height: auto;
+    animation: spin 5s linear infinite;
 }
 .badge img{
     height: 300px;
@@ -130,10 +137,90 @@ body{
  
 }
 /*flower plant lover ends*/
+/*latest deals*/
+.latest-deal-section{
+    margin: 60px;
+    align-items: center;
+    text-align: center;
+}
+.latest-text{
+    text-align: center;
+    justify-content: center;
+    margin-left: 80px;
+    
+}
+.latest-text h1{
+    font-size: 50px;
+}
+.latest-text p{
+    font-size: 22px;
+}
+.deal-image{
+    color: white;
+    text-align: center; 
+    align-items: center;
+    justify-content: center;
+}
+.deal-image a{
+    color: white;
+}
+.deal-image{
+    display: flex;
+   
+    gap: 30px;
+}
+.bloom{
+    background-image: url(./assets/deal-bloom.png);
+    border-radius: 10px;
+    height: 205px;
+    width: 410px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bloom h1{
+    font-size: 20px;
+}
+.bloom a{
+    font-size: 16px;
+}
+.ana{
+    background-image: url(./assets/deal-ana.png);
+    border-radius: 10px;
+    height: 205px;
+    width: 410px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.ana h1{
+    font-size: 20px;
+}
+.ana a{
+    font-size: 16px;
+}
+.zabo{
+    background-image: url(./assets/deal-zabo.png);
+    border-radius: 10px;
+    height: 423px;
+    width: 830px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 3px;
+}
+.zabo h1{
+    font-size: 40px;
+}
+.zabo a{
+    font-size: 28px;
+}
+/*latest deal ends*/
 
 /*join colorful bunch*/
 .join-us{
     background: url(./assets/news-letter-bg.png);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 533px;
     
     margin: 0;
@@ -150,6 +237,7 @@ body{
     width: 644px;
     font-size: 16px;
 }
+
 .subscribe button{
     font-size: 16px;
     background-color: #E95A08;
@@ -165,17 +253,19 @@ body{
 .footer-container{
     display: flex;
     justify-content: space-between;
-    margin: 40px;
-    gap: 20px;
+    margin: 60px;
+    gap: 10px;
     color:gray;
 }
 .footer-details{
     font-size: 22px;
+   
 }
 .footer-links{
     display: grid;
     grid-template-columns: repeat(2,5fr);
     gap: 50px;  
+    
 }
 .footer-links a{
     text-decoration: none;
@@ -187,9 +277,136 @@ body{
 /*footer ends*/
 /* responsive*/
 
-@media only screen and (max-width: 390px){
+@media only screen and (max-width: 431px){
     body{
          background-color:#F5F8FF;
+         margin: 10px;
+    }
+    .navbar-main-div p,
+    .navbar-main-div h3{
+        display: none;
+    }
+    /*fresh flowers*/
+    .fresh-section{
+        display: flex;
+        flex-direction: column;
+        flex-direction: column-reverse;
+        gap: 0;
+    }
+    .fresh-image-section img{
+        height: 245px;
+        width: 394px;
+    }
+    .fresh-image-section{
+        margin-bottom: 0;
+    }
+    .fresh-text-section{
+        margin-top: 0;
+    }
+    .fresh-text-section h1{
+        font-size: 24px;
+    }
+    .fresh-text-section p{
+        font-size: 16px;
     }
 
+    /*out plant*/
+    .our-plant-text-section{
+        justify-content: center;
+        text-align: center;
+    }
+    .our-plant-text-section h1{
+        font-size: 24px;
+    }
+    .our-plant-text-section p{
+        font-size: 14px;
+    }
+    .signle-card{
+        text-align: center;
+    }
+    .signle-card img{
+        width: 200px;
+        height: 300px;
+    }
+    .signle-card button{
+        width: 200px;
+    }
+    .flower-card-section{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+        padding-left: 10px;
+    }
+    /*f;ower lover*/
+    .flower-lover-section{
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+    .image-section img{
+        width: 400px;
+    }
+    .text-section h1{
+        font-size: 24px;
+    }
+    .text-section li{
+        font-size: 14px;
+    }
+    /*deal*/
+    .image-section{
+        display: flex;
+        flex-direction: column;
+    }
+    .deal-image{
+        display: flex;
+        flex-direction: column;
+    }
+    .zabo{
+        height: 205px;
+        width: 410px;
+    }
+    .bloom h1{
+       font-size: 20px;
+    }
+    .bloom a{
+        font-size: 16px;
+    }
+    .ana h1{
+       font-size: 20px;
+    }
+    .ana a{
+        font-size: 16px;
+    }
+    .zabo h1{
+       font-size: 20px;
+    }
+    .zabo a{
+        font-size: 16px;
+    }
+    /*deal ends*/
+
+    /*subscribe*/
+    .join-us-text h1{
+        font-size: 24px;
+    }
+    .subscribe input{
+        width: 200px;
+    }
+    /*footer*/
+    .footer-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-details{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer-details p{
+        font-size: 16px;
+    }
+    .footer-links{
+        display: flex;
+        flex-direction: column;
+    }
 }
