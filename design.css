@@ -172,6 +172,7 @@ body{
 .bloom{
     background-image: url(./assets/deal-bloom.png);
     border-radius: 10px;
+    filter: brightness(.8);
     height: 205px;
     width: 410px;
     background-size: cover;
@@ -179,6 +180,7 @@ body{
 }
 .bloom h1{
     font-size: 20px;
+    padding-top: 60px;
 }
 .bloom a{
     font-size: 16px;
@@ -186,6 +188,7 @@ body{
 .ana{
     background-image: url(./assets/deal-ana.png);
     border-radius: 10px;
+    filter: brightness(.8);
     height: 205px;
     width: 410px;
     background-size: cover;
@@ -194,6 +197,7 @@ body{
 }
 .ana h1{
     font-size: 20px;
+    padding-top: 60px;
 }
 .ana a{
     font-size: 16px;
@@ -201,6 +205,7 @@ body{
 .zabo{
     background-image: url(./assets/deal-zabo.png);
     border-radius: 10px;
+    filter: brightness(.8);
     height: 423px;
     width: 830px;
     background-size: cover;
@@ -209,6 +214,7 @@ body{
 }
 .zabo h1{
     font-size: 40px;
+    padding-top: 80px;
 }
 .zabo a{
     font-size: 28px;
@@ -351,6 +357,9 @@ body{
     }
     .text-section li{
         font-size: 14px;
+    }
+    .badge{
+        display: none;
     }
     /*deal*/
     .image-section{
