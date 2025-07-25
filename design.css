@@ -84,6 +84,7 @@ body{
 .signle-card{
     align-items: center;
     text-align: center;
+    font-weight: 500;
 }
 .signle-card button{
     align-items: center;
@@ -111,6 +112,10 @@ body{
     align-items: flex-start;
     gap: 120px;
     position: relative;
+}
+.text-section{
+    padding-top: 30px;
+    padding-left: 60px;
 }
 .flower-lover-section h1{
     font-size: 50px;
@@ -146,7 +151,6 @@ body{
 .latest-text{
     text-align: center;
     justify-content: center;
-    margin-left: 80px;
     
 }
 .latest-text h1{
@@ -228,7 +232,6 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     height: 533px;
-    
     margin: 0;
     padding: 0;
     text-align: center;
@@ -242,6 +245,7 @@ body{
     height: 50px;
     width: 644px;
     font-size: 16px;
+    
 }
 
 .subscribe button{
@@ -251,6 +255,11 @@ body{
     height: 55px;
     width: 160px;
     color: white;
+}
+button:hover{
+    background-color: green;
+    transition: background-color 0.3s ease;
+
 }
 
 /*join colorful bunch ends*/
@@ -283,7 +292,7 @@ body{
 /*footer ends*/
 /* responsive*/
 
-@media only screen and (max-width: 431px){
+@media only screen and (max-width: 428px){
     body{
          background-color:#F5F8FF;
          margin: 10px;
@@ -292,16 +301,27 @@ body{
     .navbar-main-div h3{
         display: none;
     }
+    .cart{
+       margin-top: 30px;
+       margin-left: 40px;
+    }
+    .navbar{
+        display: flex;
+    }
     /*fresh flowers*/
     .fresh-section{
         display: flex;
         flex-direction: column;
         flex-direction: column-reverse;
+        align-items: center;
         gap: 0;
     }
     .fresh-image-section img{
         height: 245px;
         width: 394px;
+        padding-right: 30px;
+        margin-right: 10px;
+        display: flex;
     }
     .fresh-image-section{
         margin-bottom: 0;
@@ -348,6 +368,9 @@ body{
         display: flex;
         flex-direction: column;
         margin: 10px;
+        gap: 0;
+        align-items: center;
+        justify-content: center;
     }
     .image-section img{
         width: 400px;
@@ -392,6 +415,12 @@ body{
     .zabo a{
         font-size: 16px;
     }
+    .latest-text h1{
+        font-size: 24px;
+    }
+    .latest-text p{
+        font-size: 14px;
+    }
     /*deal ends*/
 
     /*subscribe*/
@@ -417,5 +446,8 @@ body{
     .footer-links{
         display: flex;
         flex-direction: column;
+    }
+    br{
+        display: none;
     }
 }
