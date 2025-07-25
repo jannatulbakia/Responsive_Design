@@ -446,6 +446,7 @@ button:hover{
     .footer-links{
         display: flex;
         flex-direction: column;
+        gap:10px;
     }
     br{
         display: none;
